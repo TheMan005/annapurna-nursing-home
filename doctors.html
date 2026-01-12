@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Doctors - Annapurna Nursing Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo">A</div>
+          <div>
+            <div class="nav-text-main" data-i18n="hero_title_hospital">
+              Annapurna Nursing Home
+            </div>
+            <div class="nav-text-sub">Multi‑speciality hospital</div>
+          </div>
+        </a>
+
+        <div class="mobile-menu-toggle" aria-label="Menu">
+            <div class="mobile-menu-ham"></div>
+            <div class="mobile-menu-ham"></div>
+            <div class="mobile-menu-ham"></div>
+        </div>
+
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="nav_home">Home</a>
+          <a href="about.html" data-i18n="nav_about">About</a>
+          <a href="facilities.html" data-i18n="nav_facilities">Facilities</a>
+          <a href="doctors.html" class="nav-active" data-i18n="nav_doctors">
+            Doctors
+          </a>
+          <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <div class="lang-toggle">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="kn">ಕನ್</button>
+            </div>
+            <!-- NEW: Dark mode toggle -->
+            <button class="theme-toggle light" aria-label="Toggle dark mode" title="Toggle dark/light mode"></button>
+            <a href="contact.html">
+                <button class="btn-primary" data-i18n="nav_appointment">
+                Book appointment
+                </button>
+            </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <div class="section-kicker" data-i18n="doctors_kicker">
+              Our team
+            </div>
+            <h1 class="section-title" data-i18n="doctors_title">
+              Specialists leading your care
+            </h1>
+            <p class="section-subtitle" data-i18n="doctors_intro">
+              Consultants from key disciplines work closely with nursing and
+              diagnostics to create a single, coordinated treatment plan.
+            </p>
+          </header>
+
+          <div class="section" style="padding-top: 1rem">
+            <label
+              for="specialityFilter"
+              class="form-label"
+              data-i18n="doctors_filter_label"
+              >Filter by speciality</label
+            >
+            <select id="specialityFilter" class="select">
+              <option value="all">All</option>
+              <option value="physician">Physician</option>
+              <option value="icu">ICU / Anaesthesia</option>
+              <option value="obg">Obstetrics & Gynaecology</option>
+            </select>
+          </div>
+
+          <div class="doctors-grid">
+            <article
+              class="card doctor-card"
+              data-doctor-card
+              data-doctor-name="Dr. Ananya Rao"
+              data-doctor-role="Consultant physician"
+              data-doctor-exp="12"
+              data-doctor-langs="English, Kannada, Hindi"
+              data-speciality="physician"
+            >
+              <div class="doctor-avatar">AR</div>
+              <h3 class="doctor-name" data-i18n="doctors_card_1_name">
+                Dr. Ananya Rao
+              </h3>
+              <div class="doctor-speciality" data-i18n="doctors_card_1_role">
+                Consultant physician
+              </div>
+              <p class="doctor-meta" data-i18n="doctors_card_1_meta">
+                Internal medicine • Diabetes care
+              </p>
+              <div class="doctor-actions">
+                <span class="badge-soft">OPD • In‑patient</span>
+                <a href="#"
+                  class="link-ghost"
+                  data-i18n="doctors_card_know_more"
+                  >View profile</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="card doctor-card"
+              data-doctor-card
+              data-doctor-name="Dr. Vikram Shetty"
+              data-doctor-role="Anaesthesiologist & intensivist"
+              data-doctor-exp="10"
+              data-doctor-langs="English, Kannada"
+              data-speciality="icu"
+            >
+              <div class="doctor-avatar">VS</div>
+              <h3 class="doctor-name" data-i18n="doctors_card_2_name">
+                Dr. Vikram Shetty
+              </h3>
+              <div class="doctor-speciality" data-i18n="doctors_card_2_role">
+                Anaesthesiologist & intensivist
+              </div>
+              <p class="doctor-meta" data-i18n="doctors_card_2_meta">
+                ICU • OT
+              </p>
+              <div class="doctor-actions">
+                <span class="badge-soft">ICU • OT</span>
+                <a href="#"
+                  class="link-ghost"
+                  data-i18n="doctors_card_know_more"
+                  >View profile</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="card doctor-card"
+              data-doctor-card
+              data-doctor-name="Dr. Meera Kulkarni"
+              data-doctor-role="Obstetrician & gynaecologist"
+              data-doctor-exp="14"
+              data-doctor-langs="English, Kannada, Marathi"
+              data-speciality="obg"
+            >
+              <div class="doctor-avatar">MK</div>
+              <h3 class="doctor-name" data-i18n="doctors_card_3_name">
+                Dr. Meera Kulkarni
+              </h3>
+              <div class="doctor-speciality" data-i18n="doctors_card_3_role">
+                Obstetrician & gynaecologist
+              </div>
+              <p class="doctor-meta" data-i18n="doctors_card_3_meta">
+                Women’s health • High‑risk pregnancy
+              </p>
+              <div class="doctor-actions">
+                <span class="badge-soft">OPD • Delivery</span>
+                <a href="#"
+                  class="link-ghost"
+                  data-i18n="doctors_card_know_more"
+                  >View profile</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div class="modal-backdrop" data-modal-backdrop>
+        <div class="modal">
+          <button class="modal-close" data-modal-close>&times;</button>
+          <h2
+            class="section-title"
+            style="font-size: 1.3rem; margin-bottom: 0.2rem"
+            data-i18n="doctors_modal_title"
+          >
+            Doctor profile
+          </h2>
+          <p class="text-muted" style="margin-bottom: 0.8rem">
+            <span data-modal-name>Doctor name</span> •
+            <span data-modal-role>Role</span>
+          </p>
+          <div class="badge-row" style="margin-bottom: 0.6rem">
+            <span class="badge">
+              <span data-i18n="doctors_modal_experience"
+                >Years of experience</span
+              >:
+              <span data-modal-exp>0 yrs</span>
+            </span>
+            <span class="badge">
+              <span data-i18n="doctors_modal_languages">Languages</span>:
+              <span data-modal-langs>English</span>
+            </span>
+          </div>
+          <p class="text-muted">
+            Detailed bio and timings can be added here once finalised.
+          </p>
+          <div style="margin-top: 1rem">
+            <button class="btn-primary" data-modal-close data-i18n="doctors_modal_close">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div data-i18n="footer_text">
+          Annapurna Nursing Home. For emergencies, please call before starting.
+        </div>
+        <div class="text-muted">© 2026</div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      // simple filter logic
+      const select = document.getElementById("specialityFilter");
+      const cards = document.querySelectorAll("[data-doctor-card]");
+      select.addEventListener("change", () => {
+        const value = select.value;
+        cards.forEach((card) => {
+          const spec = card.getAttribute("data-speciality");
+          card.style.display =
+            value === "all" || value === spec ? "block" : "none";
+        });
+      });
+    </script>
+  </body>
+</html>

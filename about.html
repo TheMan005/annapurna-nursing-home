@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About - Annapurna Nursing Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- same header as index, but nav_active on about -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo">A</div>
+          <div>
+            <div class="nav-text-main" data-i18n="hero_title_hospital">
+              Annapurna Nursing Home
+            </div>
+            <div class="nav-text-sub">Multi‑speciality hospital</div>
+          </div>
+        </a>
+
+        <div class="mobile-menu-toggle" aria-label="Menu">
+            <div class="mobile-menu-ham"></div>
+            <div class="mobile-menu-ham"></div>
+            <div class="mobile-menu-ham"></div>
+        </div>
+
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="nav_home">Home</a>
+          <a href="about.html" class="nav-active" data-i18n="nav_about">
+            About
+          </a>
+          <a href="facilities.html" data-i18n="nav_facilities">Facilities</a>
+          <a href="doctors.html" data-i18n="nav_doctors">Doctors</a>
+          <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <div class="lang-toggle">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="kn">ಕನ್</button>
+            </div>
+            <!-- NEW: Dark mode toggle -->
+            <button class="theme-toggle light" aria-label="Toggle dark mode" title="Toggle dark/light mode"></button>
+            <a href="contact.html">
+                <button class="btn-primary" data-i18n="nav_appointment">
+                Book appointment
+                </button>
+            </a>
+            </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <header class="section-header" style="text-align: left">
+            <div class="section-kicker" data-i18n="about_kicker">
+              Who we are
+            </div>
+            <h1 class="section-title" data-i18n="about_title">
+              A neighbourhood hospital with tertiary-level standards
+            </h1>
+          </header>
+          <p class="section-subtitle" style="text-align: left" data-i18n="about_intro">
+            Annapurna Nursing Home brings together experienced clinicians,
+            nurses, and technicians with a strong focus on emergency medicine,
+            women’s health, and chronic care.
+          </p>
+
+          <div class="section" style="padding-top: 2rem">
+            <div class="cards-grid">
+              <article class="card">
+                <h3 class="card-title" data-i18n="about_mission_title">
+                  Our mission
+                </h3>
+                <p class="card-desc" data-i18n="about_mission_body">
+                  Deliver safe, evidence‑based medical care that is accessible,
+                  transparent, and rooted in empathy.
+                </p>
+              </article>
+              <article class="card">
+                <h3 class="card-title" data-i18n="about_vision_title">
+                  Our vision
+                </h3>
+                <p class="card-desc" data-i18n="about_vision_body">
+                  To be the first call for families in our neighbourhood for any
+                  medical emergency or long‑term care need.
+                </p>
+              </article>
+              <article class="card">
+                <h3 class="card-title">Story</h3>
+                <p class="card-desc" data-i18n="about_p1">
+                  What began as a 15‑bed facility has grown into a
+                  multi‑speciality hospital while retaining the warmth of a
+                  family practice.
+                </p>
+                <p class="card-desc" style="margin-top: 0.5rem" data-i18n="about_p2">
+                  The team prioritises ethical treatment, clear billing, and
+                  honest communication with every family.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <section class="section" style="padding-top: 1.5rem">
+            <div class="cards-grid">
+              <article class="card">
+                <h3 class="card-title" data-i18n="about_stats_patients">
+                  Total patients served
+                </h3>
+                <p class="hero-metric-value">25k+</p>
+              </article>
+              <article class="card">
+                <h3 class="card-title" data-i18n="about_stats_years">
+                  Years serving the community
+                </h3>
+                <p class="hero-metric-value">15+</p>
+              </article>
+              <article class="card">
+                <h3 class="card-title" data-i18n="about_stats_departments">
+                  Clinical departments
+                </h3>
+                <p class="hero-metric-value">10+</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div data-i18n="footer_text">
+          Annapurna Nursing Home. For emergencies, please call before starting.
+        </div>
+        <div class="text-muted">© 2026</div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

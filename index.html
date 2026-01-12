@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annapurna Nursing Home - Modern Hospital Care</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo">A</div>
+        <div>
+          <div class="nav-text-main" data-i18n="hero_title_hospital">Annapurna Nursing Home</div>
+          <div class="nav-text-sub">Multi‑speciality hospital</div>
+        </div>
+      </a>
+      
+      <!-- Mobile hamburger -->
+      <div class="mobile-menu-toggle" aria-label="Menu">
+        <div class="mobile-menu-ham"></div>
+        <div class="mobile-menu-ham"></div>
+        <div class="mobile-menu-ham"></div>
+      </div>
+      
+      <nav class="nav-links">
+        <a href="index.html" class="nav-active" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="facilities.html" data-i18n="nav_facilities">Facilities</a>
+        <a href="doctors.html" data-i18n="nav_doctors">Doctors</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="kn">ಕನ್</button>
+        </div>
+        <!-- DARK MODE TOGGLE -->
+        <button class="theme-toggle light" aria-label="Toggle dark mode" title="Toggle dark/light mode"></button>
+        <a href="contact.html">
+          <button class="btn-primary" data-i18n="nav_appointment">Book appointment</button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-pill">
+            <span class="hero-pill-dot"></span>
+            <span data-i18n="hero_kicker">24/7 Emergency-ready</span>
+          </div>
+          <h1 class="hero-title">
+            <span data-i18n="hero_title">Modern care for every family, powered by advanced technology.</span>
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            From critical care to everyday health, our specialists, nurses, and diagnostics work as one team to keep you safe.
+          </p>
+          <div class="hero-actions">
+            <a href="contact.html">
+              <button class="btn-primary" data-i18n="hero_btn_primary">Book an appointment</button>
+            </a>
+            <a href="#services" class="btn-outline" data-i18n="hero_btn_secondary">View departments</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="hero-metric">
+              <div class="hero-metric-value">25k+</div>
+              <div class="hero-metric-label" data-i18n="hero_metric_1_label">Patients cared for</div>
+            </div>
+            <div class="hero-metric">
+              <div class="hero-metric-value">20+</div>
+              <div class="hero-metric-label" data-i18n="hero_metric_2_label">Specialist doctors</div>
+            </div>
+            <div class="hero-metric">
+              <div class="hero-metric-value">4.8</div>
+              <div class="hero-metric-label" data-i18n="hero_metric_3_label">Average rating</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-hidden="true">
+          <div class="hero-card-inner">
+            <div class="hero-card-header">
+              <div class="hero-badge">
+                <span class="hero-status-dot"></span>
+                <span data-i18n="hero_card_kicker">Live patient vitals</span>
+              </div>
+              <div class="hero-heart">
+                <span data-i18n="hero_card_heart">♥</span>
+              </div>
+            </div>
+            <div class="hero-monitor">
+              <div class="monitor-label" data-i18n="hero_monitor_label">Telemetry • ECG feed</div>
+              <div class="ecg">
+                <div class="ecg-line">
+                  <div class="ecg-pulse"></div>
+                </div>
+              </div>
+              <div class="monitor-footer">
+                <div>
+                  <div class="monitor-stat-label" data-i18n="hero_monitor_hr">Heart rate</div>
+                  <div class="monitor-stat-value">78 bpm</div>
+                </div>
+                <div>
+                  <div class="monitor-stat-label" data-i18n="hero_monitor_bp">Blood pressure</div>
+                  <div class="monitor-stat-value">118/76</div>
+                </div>
+                <div>
+                  <div class="monitor-stat-label" data-i18n="hero_monitor_spo2">SpO₂</div>
+                  <div class="monitor-stat-value">99%</div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-avatar-row">
+              <div>
+                <div class="hero-avatars">
+                  <div class="hero-avatar">AR</div>
+                  <div class="hero-avatar">VS</div>
+                  <div class="hero-avatar hero-avatar-more">+5</div>
+                </div>
+                <div class="monitor-stat-label" style="margin-top: 0.35rem" data-i18n="hero_patients_label">
+                  Patients monitored in ICU
+                </div>
+              </div>
+              <div class="hero-rating">
+                <div class="hero-rating-stars">★★★★★</div>
+                <div class="monitor-stat-label" data-i18n="hero_rating_label">Patient satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-kicker" data-i18n="home_services_kicker">Care you can trust</div>
+          <h2 class="section-title" data-i18n="home_services_title">Comprehensive care under one roof</h2>
+          <p class="section-subtitle" data-i18n="home_services_sub">
+            Digital

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact - Annapurna Nursing Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo">A</div>
+          <div>
+            <div class="nav-text-main" data-i18n="hero_title_hospital">
+              Annapurna Nursing Home
+            </div>
+            <div class="nav-text-sub">Multi‑speciality hospital</div>
+          </div>
+        </a>
+
+        <div class="mobile-menu-toggle" aria-label="Menu">
+            <div class="mobile-menu-ham"></div>
+            <div class="mobile-menu-ham"></div>
+            <div class="mobile-menu-ham"></div>
+        </div>
+
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="nav_home">Home</a>
+          <a href="about.html" data-i18n="nav_about">About</a>
+          <a href="facilities.html" data-i18n="nav_facilities">Facilities</a>
+          <a href="doctors.html" data-i18n="nav_doctors">Doctors</a>
+          <a href="contact.html" class="nav-active" data-i18n="nav_contact">
+            Contact
+          </a>
+        </nav>
+        <div class="nav-actions">
+            <div class="lang-toggle">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="kn">ಕನ್</button>
+            </div>
+            <!-- NEW: Dark mode toggle -->
+            <button class="theme-toggle light" aria-label="Toggle dark mode" title="Toggle dark/light mode"></button>
+            <a href="contact.html">
+                <button class="btn-primary" data-i18n="nav_appointment">
+                Book appointment
+                </button>
+            </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <header class="section-header" style="text-align: left">
+            <div class="section-kicker" data-i18n="contact_kicker">
+              Contact & location
+            </div>
+            <h1 class="section-title" data-i18n="contact_title">
+              Reach Annapurna Nursing Home
+            </h1>
+            <p class="section-subtitle" style="text-align: left" data-i18n="contact_intro">
+              Call in emergencies, or use the form for non‑urgent appointments
+              and questions.
+            </p>
+          </header>
+
+          <div class="form-card card">
+            <form data-appointment-form>
+              <div class="form-group">
+                <label class="form-label" data-i18n="contact_form_name">
+                  Full name
+                </label>
+                <input
+                  type="text"
+                  class="input"
+                  required
+                  data-i18n-placeholder="contact_form_name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" data-i18n="contact_form_phone">
+                  Mobile number
+                </label>
+                <input
+                  type="tel"
+                  class="input"
+                  required
+                  data-i18n-placeholder="contact_form_phone"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" data-i18n="contact_form_reason">
+                  Reason for visit
+                </label>
+                <input
+                  type="text"
+                  class="input"
+                  data-i18n-placeholder="contact_form_reason"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" data-i18n="contact_form_department">
+                  Preferred department
+                </label>
+                <select class="select">
+                  <option>General medicine</option>
+                  <option>Obstetrics & Gynaecology</option>
+                  <option>Paediatrics</option>
+                  <option>Orthopaedics</option>
+                  <option>ICU / Critical care</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" data-i18n="contact_form_date">
+                  Preferred date
+                </label>
+                <input type="date" class="input" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" data-i18n="contact_form_message">
+                  Additional details
+                </label>
+                <textarea
+                  class="textarea"
+                  data-i18n-placeholder="contact_form_message"
+                ></textarea>
+                <div class="form-helper" data-i18n="contact_form_helper">
+                  Online requests are reviewed during OPD hours. For
+                  emergencies, call the hospital directly.
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                class="btn-primary"
+                data-i18n="contact_form_submit"
+              >
+                Request appointment
+              </button>
+            </form>
+
+            <aside class="contact-info-card">
+              <h3
+                class="card-title"
+                style="color: #e5e7eb; margin-bottom: 0.7rem"
+                data-i18n="contact_info_title"
+              >
+                24×7 emergency contact
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 0.4rem">
+                <strong data-i18n="contact_info_emergency">Emergency</strong>:
+                +91‑98765‑43210
+              </p>
+              <p style="font-size: 0.9rem; margin-bottom: 0.4rem">
+                <strong data-i18n="contact_info_opd">OPD & appointments</strong
+                >: +91‑98765‑43211
+              </p>
+              <p style="font-size: 0.9rem; margin-bottom: 0.9rem">
+                <strong data-i18n="contact_info_email">General email</strong>:
+                care@annapurnahospital.in
+              </p>
+              <h4
+                style="font-size: 0.9rem; margin-bottom: 0.2rem"
+                data-i18n="contact_info_address_title"
+              >
+                Address
+              </h4>
+              <p style="font-size: 0.85rem; color: #9ca3af">
+                Annapurna Nursing Home, <br />
+                Example Main Road, <br />
+                Bengaluru – 5600XX.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div data-i18n="footer_text">
+          Annapurna Nursing Home. For emergencies, please call before starting.
+        </div>
+        <div class="text-muted">© 2026</div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
